@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import  "./EvenOddCheck.css"
+import Reset from "../images/reset.png"
 
 function EvenOddCheck() {
   const [click, setClick] = useState(0);
@@ -18,7 +19,8 @@ function EvenOddCheck() {
 
       <button className= "buttonSubmit" onClick={handleButton}> Click Me</button>
       {/* <button className= "buttonSubmit" onClick={() => setClick(click + 1)}> Click Me</button> */}
-      <button className= 'buttonReset' onClick={()=> setClick(0)}>Reset </button>
+      {/* <button className= 'buttonReset' onClick={()=> setClick(0)}>Reset </button> */}
+      <img src={Reset} alt="Reset" className= 'buttonReset' onClick={()=> setClick(0)}/>
     </div>
   )
 }
